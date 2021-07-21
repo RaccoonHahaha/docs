@@ -1,24 +1,23 @@
-# Tokens and Pools
+# 代币和流动性
 
-## Tokens
+## 代币
 
-Tokens are blockchain-based digital assets that conform to widely accepted standards such as ERC-20 or ERC-721. Within the OptyFi protocol, a token may be categorized into one or more of the following categories:
+代币是基于区块链的数字资产，符合 ERC-20 或 ERC-721 等广泛接受的标准。在 OptyFi 协议中，代币可以分为以下一个或多个类别：
 
-* **Core Token:** Refers to fundamental tokens such as DAI, USDC, LINK and WETH.
-* **LP Token:** Represents ownership in a [liquidity pool](tokens-and-pools.md#liquidity-pools). Within the OptyFi protocol, pool tokens may be:
-  * **Single-Asset LP Tokens** such as cDAI or aUSDC.
-  * **Multi-Asset LP Tokens** such as UNI-ETH-USDT. 
-* **Vault Token:** Represents ownership in an OptyFi vault. It should be noted that vaults are a type of liquidity pool, therefore vault tokens are also LP Tokens.   
-* **Input Token \(aka Underlying Token\):** The asset deposited into or held by a pool or vault.
-* **Output Token \(aka LP Token\):** The token received when depositing into a pool. Output tokens are interchangeably referred to as LP Tokens.  
-* **Reward Token:** The token distributed by a Protocol to reward its users and/or community. Examples include OPTY, COMP and CRV for the OptyFi, Compound and Curve protocols respectively.
+* **核心代币：** 指基本代币，如 DAI、USDC、LINK 和 WETH。
+* **流动性代币：** 代表 [流动性池](tokens-and-pools.md#liquidity-pools) 中的所有权。在 OptyFi 协议中，流动性代币可能是：
+  * **单一资产流动性代币**，例如 cDAI 或 aUSDC。
+  * **多资产流动性代币**，例如 UNI-ETH-USDT。
+* **机枪池：** 代表 OptyFi 机枪池中的所有权。需要注意的是，机枪池是一种流动性池，因此机枪池代币也是流动性代币。
+* **输入代币\（又名底层资产代币\）：** 存入流动性或机枪池的资产。
+* **输出代币\（又名流动性代代币\）：**存入流动性或机枪池后收到的代币。输出令牌换成流动性代币。
+* **奖励代币：** 由协议分发以奖励其用户和/或社区的治理代币。示例包括分别用于 OptyFi、Compound和Curve的 OPTY、COMP 和 CRV。
 
-## Liquidity Pools
+## 流动性资金池
 
-Liquidity pools are smart contracts that collect assets from liquidity providers and generate returns from these assets and then share these returns with liquidity providers. 
+流动性池是从流动性提供者那里收集资产并从这些资产中产生回报的智能合约，合约将与流动性提供者分享这些回报。
 
-Two common types of liquidity pools are:
+两种常见的流动资金池是：
 
-* **Lending Pools** that generate interest fees from lending out pool assets to borrowers \(e.g. the Compound cDAI pool\). 
-* **Trading Pools** that generate trading fees by allowing traders to swap assets \(e.g. the Uniswap ETH-USDT pool\). 
-
+* **借贷池**通过将池资产借给借款人\（例如 Compound cDAI 池\）产生利息费用。
+* **交易池**通过允许交易者交易资产\（例如 Uniswap ETH-USDT 池\）来产生交易费用。
